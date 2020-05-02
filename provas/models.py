@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+#Criado o Usuario e Senha do Django
 # TestCommit
 
 class Cliente (models.Model):
