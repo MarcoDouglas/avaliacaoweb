@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+# TestCommit
 
 class Cliente (models.Model):
     nome= models.CharField('nome', max_length=100)
