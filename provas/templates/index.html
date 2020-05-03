@@ -1,16 +1,121 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Estetica Facial e Corporal-Nahra Lopes</title>
-    <link  href="templates\style.css">
+    <link  rel="stylesheet" href="{% static 'css/style.css'%}">
 
 </head>
 <body>
-   	<div class="content">
-			<h1> Quem somos?</h1>
+<nav id="menu">
+    <ul>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+        <li><a href="#" >        Inicial</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Localização</a></li>
+        <li><a href="#">Sobre</a></li>
+
+    </ul>
+</nav>
 
 
+
+    <div class="content">
+
+        <figure>
+			<img src = "static/img/foto1.jpeg" width="642" height="600" align="center"  alt="Logo da empresa" >
+		</figure>
+
+		<div id="formulario">
+            <h1> Bem Vindo!</h1>
+             </br>
+            Meu nome é Nahra Lopes sou formada em Estética e Cosmetica nesse espaço virtual
+            tenho com objetivo dar dicas de beleza mostrar os resultados  maravilhosos dos meus pacientes.
+            </br></br>
+            <p>Receba Dicas Gratuitas!!<p></p>
+            </br>
+              </br>
+			Nome:	<br/><input type="text" name="tNome"   placeholder="Digite Nome "></br></br>
+			Email:		</br>			<input type="text" name="tEmail" 		   placeholder="Email">
+            </br></br>
+            <button  id="botaoSocial"  onClick="location href= 'index_versao2'"> Cadastre-Se </button>
+		</div>
+
+    </div>
+    <div class="content1">
+        <div Id="tag">
+            <h2>Tratamentos</h2>
+        </div>
+        </br>
+            <figure1>
+			<img src = "static/img/ventosaterapia.jpeg" width="300" height="370"   alt="ventosaterapia" >
+		    </figure1>
+            <div Id="informacoes">
+                <h1>Ventosaterapia</h1></br>
+                É um tipo de tratamento natural, no qual são criados vácuos por
+                sucção da pele (por meio de ventosas). O vácuo formado estimula a circulação sanguínea
+                e com este processo são liberadas as toxinas existentes do sangue
+                </br></br>
+                Beneficios: Estresse e Ansiedade, Eliminação de dores musculares e pontos gatilhos,
+                Melhorar circulação local , Aumento da oxigenação nos tecidos e Relaxar e acalmar o corpo
+                e a mente.
+            </div>
+    </div>
+    <div class="content2">
+
+        </br>
+            <figure1>
+				<img src = "static/img/pedras.jpeg" width="300" height="450"   alt="ventosaterapia" >
+		    </figure1>
+            <div Id="informacoes">
+
+             <h1>Pedras Quentes</h1></br>
+
+                Se você procura serenidade, relaxamento, calma e paz interior, a terapia das pedras quentes é para você!
+
+             Muito utilizada no inverno, a terapia com pedras quentes é uma massagem feita com pedras de basalto quentes em todo o corpo.
+            Ela auxilia no relaxamento muscular e  alivia o estresse acumulado durante a correria do dia a dia.
+
+             A terapia das pedras quentes é milenar, e os chineses a utilizam desde antes da dinastia Shang, ou seja, cerca de 2000 –
+            1500 A.C., já se usava as pedras quentes para aliviar músculos cansados.
+
+            Em um ambiente tranquilo e relaxante, é feita uma massagem em todo o corpo com bastante óleo e, na sequência, o terapeuta
+            realiza também uma suave massagem com a pedra aquecida deixando-a na pele durante alguns minutos,
+            em pontos específicos do corpo, chamados de pontos-chave de acupressão.
+            </br> </br>
+            Beneficios:Relaxamento profundo: Eliminação de gordura e combate à celulite; Aumento da circulação sanguínea; Revigora o tônus muscular;
+            Melhora no fluxo da energia vital; Estimula os processos fisiológicos, como respiração e digestão; Aumento da drenagem linfática;
+            Alívio de dores musculares; Diminuição do estresse e tensões; Aumento do bem-estar; Melhora na mobilidade das articulações;
+            </div>
+    </div>
+
+     <div class="content3">
+
+        </br>
+            <figure1>
+				<img src = "static/img/drenamax.jpeg" width="300" height="450"   align="left" alt="ventosaterapia" >
+		    </figure1>
+            <div Id="informacoes">
+            <h1>DrenaMax</h1></br>
+            Traz um novo conceito de massagem, com as manobras específicas que acompanham, estimulam e
+            auxiliam o sistema linfático e neurolinfático, trabalhando assim a drenagem do organismo de
+            maneira global. Propicia resultados imediatos e
+            benefícios gradativos e duradouros, promovendo saúde, qualidade de vida, beleza e bem-estar.
+
+            A técnica possui manobras especiais conjugadas aos óleos essenciais, e ou aos moduladores
+            frequenciais, que irão propiciar uma melhora imediata e duradoura para todos que receberem a massagem. Além de trabalhar os pontos neurolinfáticos, propiciando assim a drenagem de todos os tecidos e sistemas do organismo, assim como seu equilíbrio.
+            </br> </br>
+            Beneficios:Relaxamento profundo: Eliminação de gordura e combate à celulite; Aumento da circulação sanguínea; Revigora o tônus muscular;
+            Melhora no fluxo da energia vital; Estimula os processos fisiológicos, como respiração e digestão; Aumento da drenagem linfática;
+            Alívio de dores musculares; Diminuição do estresse e tensões; Aumento do bem-estar; Melhora na mobilidade das articulações;
+            </div>
     </div>
 </body>
 </html>
+
+
+
+
+
