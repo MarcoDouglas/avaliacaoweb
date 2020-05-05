@@ -7,33 +7,28 @@
     font-weight:300 ;
 
 	}
-nav[id="menu"]{
-background:pink;
-color:white;
-}
+    nav[id="menu"]{
+    background:pink;
+    color:white;
+    }
 	#menu ul li { display: inline; }
-#menu ul li a {
+    #menu ul li a {
     padding: 15px 5px;
     display: inline-block;
-
-    /* visual do link */
     background-color:pink;
-    color:         ;
     text-decoration: none;
     border-bottom:3px solid  #ff69b4;
-
-}
-#menu ul li a:hover {
+    }
+    #menu ul li a:hover {
     background-color:white;
     color: pick;
     border-bottom:3px solid white;
-}
+    }
 
 	body{
-
-	background:#ffe4e1;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-image:url("fundo.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 
 	}
 
@@ -41,26 +36,21 @@ color:white;
 	width:1100px;
 	height:680px;
 	margin: auto;
-
 	}
 	.content1{
 	width:1100px;
 	height:600px;
 	margin: auto;
-
-
 	}
 	.content2{
 	width:1100px;
 	height:720px;
 	margin: auto;
-
 	}
 	.content3{
 	width:1100px;
 	height:700px;
 	margin: auto;
-
 	}
 	#formulario{
 	background:#ffb6c1;
@@ -69,25 +59,26 @@ color:white;
     padding:40px;
     padding-bottom:80px;
     padding-top:80px;
-    opacity:0.85;
+    opacity:0.95;
 	}
+
     #tag{
 	background:#ffb6c1;
-
     padding-left:80px;
     padding-bottom:40px;
     padding-top:60px;
 	}
+
 	figure{
 	background-color:white;
 	float: left;
 	padding:20pt;
 	}
+
 	figure1{
-
 	float: left;
-
 	}
+
     h1{
 	font-family: 'Arial', sans-serif;
 	font-size:20pt;
@@ -95,10 +86,18 @@ color:white;
     text-align:center;
 	color:black;
 	}
+    p1{
+	font-family: 'Arial', sans-serif;
+	font-size:20pt;
+
+    text-align:center;  
+	color:black;
+	font-style: italic;
+	}
 	h2{
 	font-family: 'Arial', sans-serif;
 	font-size:35pt;
-    font-weight: ;
+
     text-align:center;
 	color:black;
 	font-style: italic;
@@ -107,6 +106,11 @@ color:white;
 	border-radius:3px;
 	width:300px;
 	height:25px;
+	}
+	input[id=tDuvidas]{
+	border-radius:3px;
+	width:500px;
+	height:150px;
 	}
 	::placeholder{
 	text-align:left-top;
@@ -135,5 +139,32 @@ color:white;
     padding:40px;
     padding-bottom:95px;
     padding-top:70px;
-    opacity:0.85;
+    opacity:0.95;
+	}
+	#sobre{
+	background:#ffb6c1;
+	float: right;
+	width:64%;
+    padding:40px;
+    padding-bottom:95px;
+    padding-top:70px;
+    opacity:0.95;
+	}
+	#contatos{
+	background:white;
+	margin:auto;
+	width:64%;
+    padding:40px;
+    padding-bottom:95px;
+    padding-top:70px;
+    opacity:0.8;
+	}
+	#localizacao{
+	background:#ffb6c1;
+	float: right;
+	width:30%;
+    padding:40px;
+    padding-bottom:100px;
+    padding-top:100px;
+    opacity:0.95;
 	}
