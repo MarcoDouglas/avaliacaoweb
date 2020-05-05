@@ -32,11 +32,31 @@
             <p>Tire suas duvidas!!<p></p>
             </br>
               </br>
-			Nome:	<br/><input type="text" name="tNome"   placeholder="Digite Nome "></br></br>
-			Email:		</br>			<input type="text" name="tEmail" 		   placeholder="Email"></br></br>
-            Duvidas:		</br>			<input type="text" name="tDuvidas" 	id="tDuvidas"	   placeholder="Duvidas">
-            </br></br>
-            <button  id="botaoSocial"  onClick="location href= 'index_versao2'"> Enviar </button>
+			 <form id="form">
+					<input type="hidden" name="form" value="OK">
+					Nome :<br>
+					<input type="text" name="nome" id="nome" placeholder="Nome"><br>
+					Email:<br>
+					<input type="text" name="email" id="email" placeholder="Email"><br>
+                    Duvidas:<br>
+					<input type="text" name="duvida" id="duvida" placeholder="Duvidas"><br><br>
+					<button id="botaoSocial" type="submit" value="Enviar">Enviar</button>
+				</form>
+     	<script>
+        	document.getElementById('form').addEventListener("submit", function(event) {
+				event.preventDefault();
+
+				nome = document.getElementById('nome').value;
+				email = document.getElementById('email').value;
+                duvida = document.getElementById('duvida').value;
+
+				if(nome != "" && email != "" && duvida != ""){
+					this.submit();
+				}else{
+					alert("Preencha corretamente todos os campos");
+				}
+			});
+		</script>
     </div>
  </div>
 
