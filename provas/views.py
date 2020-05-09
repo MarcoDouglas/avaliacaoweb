@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from provas.models import duvidas
 
 # Create your views here.
 def index(request):
@@ -7,11 +7,17 @@ def index(request):
 
 
 def contato(request):
+
     return render(request, 'contato.html')
 
 
 def sobre(request):
-    return render(request, 'sobre.html')
+    listadeduvidas = duvidas.objects.all()
+    context = {
+        'duvida': listadeduvidas
+    }
+
+    return render(request, 'sobre.html', context)
 
 
 def localizacao(request):

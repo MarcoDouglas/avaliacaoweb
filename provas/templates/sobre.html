@@ -1,5 +1,7 @@
 {% load static %}
+
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +10,7 @@
 
 </head>
 <body>
+
 <nav id="menu">
     <ul>
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -23,12 +26,24 @@
      <figure1>
 			<img src = "static/img/sobre.png" width="300" height="500" align="center"  alt="Logo da empresa" >
      </figure1>
+
     <div id="sobre">
+
             <h2> Um pouco sobre mim... </h2>
              </br>
+
+
             Meu nome é Nahra Lopes sou  nesse espaço virtual
             tenho com objetivo dar dicas de beleza mostrar os resultados  maravilhosos dos meus pacientes.
             </br></br>
+       <h1> Duvidas frequentes:</h1></br></br>
+            {%for duvida in duvida%}
+            {{duvida.nome}} -
+            {{duvida.duvidas}}</br></br>
+            {%endfor%}
+
+
+        </br></br>
             <p>Tire suas duvidas!!<p></p>
             </br>
               </br>
